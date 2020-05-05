@@ -1,5 +1,5 @@
 def is_twodigit_odd(number):
-    pass
+    return True if (number > 9 and number < 100) else False
 
 
 def has_access(user, users_groups, file_owner, writable_by_owner, file_group, writable_by_group, writable_by_others, sudo_mode):
