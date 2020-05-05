@@ -20,7 +20,13 @@ def has_access(user, users_groups, file_owner, writable_by_owner, file_group, wr
 
 
 def is_leap_year(year):
-    pass
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return True
+        else:
+            return True
+    return False
 
 
 def is_sunday(day, weekday_of_first):
