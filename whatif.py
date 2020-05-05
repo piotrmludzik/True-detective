@@ -30,7 +30,11 @@ def is_leap_year(year):
 
 
 def is_sunday(day, weekday_of_first):
-    pass
+    weekday = ["M", "Tu", "W", "Th", "F", "Sa", "Su"]
+
+    if (day + weekday.index(weekday_of_first)) % 7 == 0:
+        return True
+    return False
 
 
 def should_bring_umbrella(rains, wind_scale, cloudy, red_sky, strong_flower_smell, spiders_down, lying_cattle, strong_sunshine):
