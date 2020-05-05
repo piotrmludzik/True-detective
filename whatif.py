@@ -38,7 +38,21 @@ def is_sunday(day, weekday_of_first):
 
 
 def should_bring_umbrella(rains, wind_scale, cloudy, red_sky, strong_flower_smell, spiders_down, lying_cattle, strong_sunshine):
-    pass
+    if wind_scale < 7:
+        if rains:
+            return True
+        if cloudy:
+            if red_sky:
+                return True
+            if strong_flower_smell:
+                return True
+            if spiders_down:
+                return True
+            if lying_cattle:
+                return True
+        if strong_sunshine:
+            return True
+    return False
 
 
 def should_take_a_nap(want_to, trouble_sleeping, after_4pm, at_work, mad_boss, have_30m, have_10m):
